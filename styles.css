@@ -31,7 +31,7 @@ h1 {
 
 .btn-area {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     gap: 10px;
 }
 
@@ -42,3 +42,15 @@ h1 {
     border: 0;
     font-size: 20px;
 }
+
+.range-area {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.range-slider {
+    width: 200px;
+}
+
