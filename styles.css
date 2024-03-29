@@ -1,0 +1,44 @@
+body {
+    background-color: #7A7257;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #F093FA;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.paint-area {
+    background-color: white;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.grid {
+    outline: 1px solid #f5f4f4;
+}
+
+.btn-area {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #577A71;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 20px;
+}
