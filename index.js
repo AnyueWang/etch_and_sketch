@@ -37,12 +37,18 @@ btnClear.addEventListener("click", () => {
     updateInstruction();
 });
 
+let paintColor = "black";
+document.querySelector("#paint-color").addEventListener("input", (e)=>{
+    paintColor = e.target.value;
+    console.log(paintColor);
+})
+
 document.addEventListener("keydown", (e) => {
     if (e.key === "s") {
         drawToggle = !drawToggle;
         updateInstruction();
         document.querySelectorAll(".grid").forEach((eachGrid) => {
-            eachGrid.addEventListener("mouseover", () => {if (drawToggle) { eachGrid.style.backgroundColor = "black"; }});
+            eachGrid.addEventListener("mouseover", () => {if (drawToggle) { eachGrid.style.backgroundColor = paintColor; }});
         });
     }
 })
